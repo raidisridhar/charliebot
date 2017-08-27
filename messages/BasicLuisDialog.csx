@@ -32,7 +32,7 @@ public class BasicLuisDialog : LuisDialog<object>
     [LuisIntent("Help")]
     public async Task HelpIntent(IDialogContext context, LuisResult result)
     {
-        await context.PostAsync($"I am sorry to know you have a problem, I will be glad to help you"); //
+        await context.PostAsync($"I am sorry to know you have a problem, Joe will be glad to help you"); //
         context.Wait(MessageReceived);
     }
 }
