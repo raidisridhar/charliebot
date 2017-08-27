@@ -17,7 +17,7 @@ public class BasicLuisDialog : LuisDialog<object>
     [LuisIntent("None")]
     public async Task NoneIntent(IDialogContext context, LuisResult result)
     {
-        await context.PostAsync($"I am sorry I could not understand  your question can you ask again"); //
+        await context.PostAsync($"I am sorry I could not understand  your question can you ask again sritest"); //
         context.Wait(MessageReceived);
     }
 
